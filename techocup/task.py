@@ -2,7 +2,7 @@ n = int (input (""))
 lst = []
 lst_file_names = []
 for i in range(0, n):
-	file = input("f ")	
+	file = input("")	
 	s_file = file
 	f_format = ""
 	if file in lst_file_names:
