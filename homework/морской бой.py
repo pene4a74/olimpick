@@ -53,7 +53,7 @@ for u in range(1,N):
     mas_enemy_hiden[u].append(emt_list)
 #заполнение 16 кораблями вражеского поля
 
-while number_enemy_unit<8: 
+while number_enemy_unit<3: 
     pos_str=random.randint(1,8)
     pos_stl=random.randint(0,7)
     if mas_enemy[pos_str][1][pos_stl]=="⛆":
@@ -76,7 +76,7 @@ print("\n")
 for y in range(N):
     print(mas_enemy[y])
 """
-while number_our_unit<8:
+while number_our_unit<3:
         for y in range(N):
             print(mas_our[y])
         our_units_pos=input("введите координаты коробля (например:5А)")
