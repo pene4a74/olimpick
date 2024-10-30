@@ -7,4 +7,4 @@ def convert_to(number, base, upper=False):
         number //= base
     return result.upper() if upper else result
 N=int(input())
-print(convert_to(N,16,True))
+S=int(input())
