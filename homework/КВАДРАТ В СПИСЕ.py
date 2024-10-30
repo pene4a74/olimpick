@@ -8,11 +8,13 @@ for i in range(N):
     for j in range(N):
         emp_mas.append(random.randint(0,1))
     mas.append(emp_mas)
+if random.randint(0,10)<=8:
+    mas[0][0]==1
 for i in range(N):
     print(mas[i])
 
 if mas[0][0]==1 and mas[0][len_cube]==1 and mas[len_cube][0]==1 and mas[len_cube][len_cube]==1 :
-    print(True)
+    print("максимальное сторона",N)
 else:
     len_cube-=1
     for z in range(2,N):
@@ -28,6 +30,8 @@ else:
                     print(True,len_cube)
                     num_len.append(len_cube+1)
         len_cube-=1
+        if int(len(num_len))>0:
+            break
 print("максимальная сторона квадрата:",max(num_len))
     
 
