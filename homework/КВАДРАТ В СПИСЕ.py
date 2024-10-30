@@ -18,7 +18,7 @@ for i in range(N):
 for z in range(1,N):
     for i in range(z):
         for j in range(z):
-            if mas[i][j]==1 and mas[i][j+len_cube]==1 and mas[i+len_cube][j]==1 and mas[i+len_cube][j+len_cube]==1 :
+            if mas[i][j] and mas[i][j+len_cube] and mas[i+len_cube][j] and mas[i+len_cube][j+len_cube] :
                 print(True,len_cube)
                 num_len.append(len_cube+1)
     len_cube-=1
