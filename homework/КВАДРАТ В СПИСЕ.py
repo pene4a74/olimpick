@@ -6,7 +6,7 @@ len_cube=N-1
 for i in range(N):
     emp_mas=[]
     for j in range(N):
-        if random.randint(0,10)<=7:
+        if random.randint(0,10)<=8:
             emp_mas.append(1)
         else:
             emp_mas.append(0)
@@ -14,7 +14,7 @@ for i in range(N):
 
 for i in range(N):
     print(mas[i])
-    
+
 for z in range(1,N):
     for i in range(z):
         for j in range(z):
