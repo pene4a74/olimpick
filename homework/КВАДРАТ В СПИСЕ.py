@@ -6,16 +6,15 @@ len_cube=N-1
 for i in range(N):
     emp_mas=[]
     for j in range(N):
-        emp_mas.append(random.randint(0,1))
+        if random.randint(0,10)<=7:
+            emp_mas.append(1)
+        else:
+            emp_mas.append(0)
     mas.append(emp_mas)
-if random.randint(0,10)<=8:
-    mas[0][0]=1
-else:
-    mas[0][0]=0
+
 for i in range(N):
     print(mas[i])
-
-
+    
 for z in range(1,N):
     for i in range(z):
         for j in range(z):
@@ -25,7 +24,7 @@ for z in range(1,N):
     len_cube-=1
     if int(len(num_len))>1:
         break
-print("максимальная плаощадь квадрата:",max(num_len)*max(num_len))
+print("максимальная площадь квадрата:",max(num_len)*max(num_len))
     
 
 
