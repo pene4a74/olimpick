@@ -15,21 +15,22 @@ else:
 for i in range(N):
     print(mas[i])
 
+
 for z in range(1,N):
-    print("test")
     for i in range(z):
-        print("eshkere")
         for j in range(z):
-            print("test1",i,j,len_cube,mas[i][j])
-            print("test2",i,j,len_cube,mas[i][j+len_cube])
-            print("test3",i,j,len_cube,mas[i+len_cube][j])
-            print("test4",i,j,len_cube,mas[i+len_cube][j+len_cube],"\n")
             if mas[i][j]==1 and mas[i][j+len_cube]==1 and mas[i+len_cube][j]==1 and mas[i+len_cube][j+len_cube]==1 :
                 print(True,len_cube)
                 num_len.append(len_cube+1)
     len_cube-=1
-    if int(len(num_len))>0:
+    if int(len(num_len))>1:
         break
-print("максимальная площадь квадрата:",max(num_len)*max(num_len))
+print("максимальная плаощадь квадрата:",max(num_len)*max(num_len))
     
 
+
+
+"""print("test1",i,j,len_cube,mas[i][j])
+    print("test2",i,j,len_cube,mas[i][j+len_cube])
+    print("test3",i,j,len_cube,mas[i+len_cube][j])
+    print("test4",i,j,len_cube,mas[i+len_cube][j+len_cube],"\n")"""
