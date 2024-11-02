@@ -1,10 +1,13 @@
 import math
-N=int(input())
+N=input()
 S=int(input())
+al="abcdefghijklmnopqrstuvwxyz"
 N_in_10s=0
-
 list_num=list(str(N))
 pow_power=len(list_num)-1
+for i in range(len(list_num)):
+    if list_num[i] in al:
+        list_num[i]=10+al.index(list_num[i])
 for i in range(len(list_num)):
     N_in_10s+=int(list_num[i])*math.pow(S,pow_power)
     pow_power-=1
