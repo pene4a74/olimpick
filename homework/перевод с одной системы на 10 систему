@@ -1,0 +1,11 @@
+import math
+N=int(input())
+S=int(input())
+N_in_10s=0
+
+list_num=list(str(N))
+pow_power=len(list_num)-1
+for i in range(len(list_num)):
+    N_in_10s+=int(list_num[i])*math.pow(S,pow_power)
+    pow_power-=1
+print(N_in_10s)
