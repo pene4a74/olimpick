@@ -1,0 +1,15 @@
+from turtle import *
+tracer(0)
+
+left(90)
+for i in range(16):
+    left(36)
+    forward(4*40)
+    left(36)
+
+penup()
+for x in range(-10, 10):
+    for y in range(-10, 10):
+        setpos(x*40, y*40)
+        dot(4, 'red')
+#не работает интересно почему)))00)))0

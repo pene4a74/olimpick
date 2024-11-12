@@ -1,5 +1,6 @@
 num=int(input())
 list_place=[]
+list_place_al=["W","M","A","A","M","W","W","M","A","A","M","W",]
 list_in=0
 for i in range(9):
     list_place.append([])
@@ -19,12 +20,8 @@ if list_place[i].index(num)<6:
     print(list_place[i][list_place[i].index(num)+6])
 else:
     print(list_place[i][list_place[i].index(num)-6])
-if list_place[i].index(num)==0 or 5 or 6 or 11:
-    print("W")
-if list_place[i].index(num)==1 or 4 or 7 or 10:
-    print("M")
-else:
-    print("A")
+
+print(list_place_al[list_place[i].index(num)])
 
 """
 -1
